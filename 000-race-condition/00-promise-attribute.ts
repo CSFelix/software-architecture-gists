@@ -1,6 +1,18 @@
 import type { ChannelModel } from 'amqplib';
 import amqp from 'amqplib';
 
+const instanceConfig = {
+	hostname: 'hostname'
+	, port: 9999
+	, username: 'username'
+	, password: 'password'
+	, heartbeat: 60
+};
+
+const instanceSocketConfig = {
+	connectionName: 'connectionName'
+};
+
 class LoggerService {
 	// 	*************
 	// 	** Methods **
